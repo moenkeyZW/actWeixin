@@ -1,0 +1,14 @@
+/* pages/noLucky/noLucky.wxss */
+@import '../../css/common.wxss';
+
+.bg {
+  width: 100%;
+  height: 502rpx;
+}
+
+
+.cry{
+  margin:105rpx 0 70rpx 0;
+  width:280rpx;
+  height:145rpx;
+}

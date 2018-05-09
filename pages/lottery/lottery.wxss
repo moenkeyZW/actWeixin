@@ -1,0 +1,54 @@
+/* pages/lottery/lottery.wxss */
+@import '../../css/common.wxss';
+@import '../index/index.wxss';
+
+.bg {
+  width: 100%;
+  height: 502rpx;
+}
+
+.avoid {
+  margin: 66rpx 0 35rpx 0;
+  font-size: 26rpx;
+}
+
+.introduce{
+  font-size:24rpx;
+  line-height:24px;
+  color:#B4B4B4;
+}
+.phoneNum {
+  margin-top:36rpx;
+  font-size: 26rpx;
+  color: #989898;
+  text-align: center;
+}
+
+.kjTime {
+  margin:80rpx auto 0;
+}
+
+.dd {
+  position: relative;
+}
+
+.kj {
+  width: 480rpx;
+  height: 150rpx;
+}
+
+.sj {
+  height: 40rpx;
+}
+
+.time {
+  width: 100%;
+  position: absolute;
+  top: 48%;
+  left: 16%;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+

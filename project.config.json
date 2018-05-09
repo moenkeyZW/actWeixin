@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wxd98b7ce5b19829ba",
+	"projectname": "福利社",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "抽奖码",
+					"pathName": "pages/lottery/lottery",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "领奖中心",
+					"pathName": "pages/noLucky/noLucky",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "登录",
+					"pathName": "pages/login/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

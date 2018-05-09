@@ -1,0 +1,11 @@
+<!--pages/noLucky/noLucky.wxml-->
+<view class="container">
+  <view class="bg">
+    <image src="{{actPng}}"></image>
+  </view>
+  <view class='cry'>
+    <image src='../../img/cry.png'></image>
+  </view>
+  <view>很遗憾，您未能中奖</view>
+  <view>祝您下次好运！</view>
+</view>

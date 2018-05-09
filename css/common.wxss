@@ -1,0 +1,12 @@
+.primary {
+  color: #fff;
+  background-color: #0086ff;
+}
+.font{
+  color: #0086ff;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}

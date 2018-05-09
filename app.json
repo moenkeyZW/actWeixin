@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/index",
+    "pages/lottery/lottery",
+    "pages/noLucky/noLucky"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0086ff",
+    "navigationBarTitleText": "福利社",
+    "navigationBarTextStyle":"white",
+
+    "backgroundColor": "#0086ff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": true
+  }
+}

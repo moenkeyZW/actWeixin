@@ -1,0 +1,101 @@
+/**index.wxss**/
+@import '../../css/common.wxss';
+
+.header {
+  width: 100%;
+  /* background: #0086ff;
+  border-radius: 0 0 50% 50%; */
+  position: relative;
+}
+
+.top {
+  width: 100%;
+  height: 205rpx;
+}
+
+.userinfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 16rpx solid #4dabff;
+}
+
+.activity {
+  width: calc(100% - 148rpx);
+  box-shadow: 0rpx 0rpx 10rpx 1rpx #cbcbcb;
+  border-radius: 10px;
+  margin-top: 48rpx;
+  font-size: 26rpx;
+}
+
+.img {
+  width: 100%;
+  height: 400rpx;
+}
+
+.img>image {
+  border-radius: 10rpx 10rpx 0 0;
+}
+
+.intro {
+  margin: 30rpx 0 12rpx 40rpx;
+  font-size: 30rpx;
+}
+
+.condition {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40rpx 20rpx 40rpx;
+}
+
+.ing {
+  color: orangered;
+}
+
+.suc {
+  color: #28cd68;
+}
+
+.lookAct {
+  width: 154rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  border-radius: 24rpx;
+  text-align: center;
+}
+
+.noAct {
+  margin-top: 30%;
+}
+
+.mark {
+  width: 360rpx;
+  height: 240rpx;
+}
+
+.join {
+  margin-top: 16%;
+  text-align: center;
+}
+
+.foot {
+  margin-top: 48rpx;
+}
+
+.end {
+  color: #ccc;
+}
+
+.endact {
+  background: #ccc;
+}

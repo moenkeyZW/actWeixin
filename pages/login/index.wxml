@@ -1,0 +1,10 @@
+<!--pages/login/index.wxml-->
+<view class='container'>
+  <!--授权失败页面 -->
+  <view class="picture" wx:if="{{haveFullUserInfo}}">
+    <image src="../../img/fail.png"></image>
+    <view class="goAuth">
+      <button bindtap="reAuthorize">重新授权</button>
+    </view>
+  </view>
+</view>
