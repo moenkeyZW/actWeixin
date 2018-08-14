@@ -97,5 +97,6 @@
 }
 
 .endact {
+  color:#fff;
   background: #ccc;
 }

@@ -1,6 +1,20 @@
 //app.js
 App({
   onLaunch: function (options) {
+    console.log(options)
+    if (options.scene == 1044) {
+      console.log(90,options.shareTicket);
+      wx.getShareInfo({
+        shareTicket: options.shareTicket,
+        timeout: 464646461,
+        success: function (res) {
+          var encryptedData = res.encryptedData;
+          var iv = res.iv;
+        }
+      })
+      console.log(222,shareTicket)
+      
+    }
   },
   onLogin: function (cb) {
     var that = this;
@@ -27,6 +41,7 @@ App({
                         'content-type': 'application/json'
                       },
                       success: function (res) {
+                        console.log(11,res)
                         that.globalData.actList=res.data.actlist;
                         that.globalData.userInfo_avatar = res.data.avatarUrl;
                         that.globalData.state=res.data.state;

@@ -49,6 +49,7 @@ Page({
         title: '授权中',
       })
       app.onLogin(function (res) {
+        console.log(res)
         wx.hideLoading();
         if (res || res === null) {
           var id = that.data.id;

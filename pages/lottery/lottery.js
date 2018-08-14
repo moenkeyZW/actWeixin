@@ -56,7 +56,15 @@ Page({
       }
     })
   },
-
+  aijump: function (e) {
+    wx.navigateToMiniProgram({
+      appId: 'wxe28bb30028ed5d17',
+      path: 'pages/login/index',
+      success(res) {
+        // 打开成功
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */
@@ -64,11 +72,4 @@ Page({
 
   },
 
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

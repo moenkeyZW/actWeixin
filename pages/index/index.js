@@ -31,10 +31,17 @@ Page({
     }
   },
 
-  onLoad: function () {
-
+  onLoad: function (e) {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   },
-  onShow: function () {
+
+
+  onShow: function (e) {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
     var that = this;
     that.setData({
       timestamp: timestamp
@@ -88,5 +95,55 @@ Page({
     wx.navigateTo({
       url: '/pages/noLucky/noLucky?act_id=' + id,
     })
-  }
+  },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '自定义转发标题',
+      path: '/pages/index/index?id=123',
+      // success(e){
+      //   console.log(e)
+      //   wx.showShareMenu({
+      //     withShareTicket: true
+      //   })
+      //   if (e.shareTickets) {
+      //     // 获取转发详细信息
+      //     wx.getShareInfo({
+      //       shareTicket: e.shareTickets[0],
+      //       success(res) {
+      //         res.errMsg; // 错误信息
+      //         res.encryptedData;  //  解密后为一个 JSON 结构（openGId    群对当前小程序的唯一 ID）
+      //         res.iv; // 加密算法的初始向量
+      //       },
+      //       fail() { },
+      //       complete() { }
+      //     });
+      //   }
+      // }
+      success: function (res) {
+        console.log(res)
+        var shareTickets = res.shareTickets;
+        if (shareTickets.length == 0) {
+          return false;
+        }
+        wx.getShareInfo({
+          shareTicket: shareTickets[0],
+          timeout:464646461,
+          success: function (res) {
+            var encryptedData = res.encryptedData;
+            var iv = res.iv;
+          }
+        })
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+ 
+  },
+
+
 })

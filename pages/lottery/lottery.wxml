@@ -1,50 +1,59 @@
 <!--pages/lottery/lottery.wxml-->
-<view class="container" wx:if="{{actList.state==1}}">
-  <view class="bg">
-    <image src="{{actList.actPng}}"></image>
-  </view>
-  <view class="avoid font">
-    为避免无法领取门票,请勿删除朋友圈信息
-  </view>
-  <view class="introduce">
-    <view>活动截止后系统将抽取
-      <text class='font'>{{actList.zjnum}}</text>
-      个抽奖码
+<view class="container">
+  <block wx:if="{{actList.state==1}}">
+    <view class="bg">
+      <image src="{{actList.actPng}}"></image>
     </view>
-    <view>此码将作为获奖者唯一认证方式！</view>
-  </view>
-  <view class="phoneNum">
-    <view class="sj">
-      手机：
-      <text class='font'>{{actList.tel}} </text>
+    <view class="avoid font">
+      为避免无法领取门票,请勿删除朋友圈信息
     </view>
-    <view class="sj">
-      抽奖码：
-      <text class='font'>{{actList.cjm}}</text>
-    </view>
-  </view>
-  <view class="kjTime">
-    <view class="dd">
-      <view class="kj">
-        <image src="../../img/kjsjbg.png"></image>
+    <view class="introduce">
+      <view>活动截止后系统将抽取
+        <text class='font'>{{actList.zjnum}}</text> 个抽奖码
       </view>
-      <view class="time font">
-        <text>{{actList.time}}</text>
+      <view>此码将作为获奖者唯一认证方式！</view>
+    </view>
+    <view class="phoneNum">
+      <view class="sj">
+        手机：
+        <text class='font'>{{actList.tel}} </text>
+      </view>
+      <view class="sj">
+        抽奖码：
+        <text class='font'>{{actList.cjm}}</text>
       </view>
     </view>
-  </view>
-</view>
-<view class="container" wx:else>
-  <view class="header">
-    <view class="userinfo">
-      <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
-      <image class="userinfo-avatar" src="{{userInfo_avatar}}"></image>
+    <view class="kjTime">
+      <view class="dd">
+        <view class="kj">
+          <image src="../../img/kjsjbg.png"></image>
+        </view>
+        <view class="time font">
+          <text>{{actList.time}}</text>
+        </view>
+      </view>
     </view>
-  </view>
-  <view class="noAct">
-    <view class="mark">
-      <image src="../../img/no.png"></image>
+  </block>
+  <block wx:else>
+    <view class="header">
+      <view class="top">
+        <image src='../../img/head.png'></image>
+      </view>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo_avatar}}"></image>
+      </view>
     </view>
-    <view class="join">您还未参加任何活动</view>
+    <view class="noAct">
+      <view class="mark">
+        <image src="../../img/no.png"></image>
+      </view>
+      <view class="join">您还未参加任何活动</view>
+    </view>
+  </block>
+  <view class="jump" bindtap='aijump'>
+    <view class="click">健康测试</view>
+    <view class='cartoon'>
+      <image src='../../img/cartoon.png'></image>
+    </view>
   </view>
 </view>

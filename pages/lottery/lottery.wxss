@@ -51,4 +51,21 @@
   font-size: 32rpx;
 }
 
+.jump{
+  position: fixed;
+  bottom:16%;
+  left:0;
+  font-size:26rpx;
+}
 
+.cartoon{
+  width:185rpx;
+  height:200rpx;
+}
+.click{
+  position: absolute;
+  top:73rpx;
+  left:53rpx;
+  width:60rpx;
+  color: #19b4f2;
+}

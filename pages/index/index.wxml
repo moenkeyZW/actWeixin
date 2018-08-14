@@ -10,7 +10,6 @@
   </view>
   <block wx:if="{{state==1}}">
     <view class="activity" wx:for="{{actList}}" wx:key="{{index}}" data-index="{{item.id}}" data-key="{{index}}">
-
       <block wx:if="{{timestamp<item.kj_time && item.success==1}}">
         <view bindtap='lookActivity' data-index="{{item.act_id}},{{item.share}}">
           <view class="img">
@@ -66,6 +65,7 @@
       </view>
       <view class="join">您还未参加任何活动</view>
     </view>
+    <button open-type="share">分享</button>
   </block>
   <view class="foot"></view>
 </view>
